@@ -2,6 +2,19 @@
 
 Agile reporting built on the [`gh-agile`](https://github.com/paulcaron16k/gh-agile) export.
 
+## What this repository holds
+
+`gh-agile` is the Agile tool: boards, sprints and issues on GitHub, and an export of them. This
+repository is what is done with that export — **KPIs**, and the model they are expressed in.
+
+- [`GOLD_MODEL.md`](GOLD_MODEL.md) — a generic Agile metrics model, `agile_issues` and
+  `agile_events`, and how `gh-agile`'s silver export fills it. Generic so that a measure taken on
+  GitHub can be set beside the same measure from another Agile tool, such as Jira.
+
+The boundary runs both ways: `gh-agile` writes no `agile_*` file, and nothing here writes to GitHub.
+The export's contract is `gh-agile`'s
+[`github_catalog.json`](https://github.com/paulcaron16k/gh-agile/blob/main/github_catalog.json).
+
 ## This repository has no project of its own
 
 Its issues live on **`paulcaron16k/projects/4`**, the same board as `gh-agile`, under the key
